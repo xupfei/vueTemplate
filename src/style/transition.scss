@@ -1,0 +1,43 @@
+//切换动画
+
+//
+.slide-left-enter-active {
+  transition: all .4s;
+}
+
+.slide-left-leave-active {
+  transition: all .4s;
+}
+
+.slide-left-enter, .slide-left-leave-to {
+  transform: translateX(1%);
+  opacity: 0;
+}
+
+//
+.slide-right-enter-active {
+  transition: all .4s;
+}
+
+.slide-right-leave-active {
+  transition: all .4s;
+}
+
+.slide-right-enter, .slide-right-leave-to {
+  transform: translateX(-1%);
+  opacity: 0;
+}
+
+//
+.zoom-in-enter-active {
+  transition: all .4s;
+}
+
+.zoom-in-leave-active {
+  transition: all .4s;
+}
+
+.zoom-in-enter, .zoom-in-leave-to {
+  transform: scale3d(0.3, 0.3, 0.3);
+  opacity: 0;
+}

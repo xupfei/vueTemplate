@@ -1,0 +1,110 @@
+@import "./transition";
+body,
+div,
+header,
+footer,
+nav,
+section,
+aside,
+article,
+ul,
+dl,
+dt,
+dd,
+li,
+a,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+i,
+b,
+textarea,
+button,
+input,
+select {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    font-style: normal;
+    text-decoration: none;
+    border: none;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+    &:focus {
+        outline: none;
+    }
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-family: "Microsoft YaHei";
+    overflow: auto;
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+::-webkit-scrollbar {
+    /*滚动条里面轨道*/
+    width: 6px;
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    /*滚动条里面小方块*/
+    background-color: #8899a7;
+    border-radius: 4px;
+}
+
+.clear:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.clear {
+    zoom: 1;
+}
+
+.c-fl-l {
+    float: left;
+}
+
+.c-width-full {
+    width: 100%;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+.test:hover {
+    background-color: red;
+}
+
+.clear {
+    &::after {
+        content: '';
+        display: block;
+        clear: both;
+        zoom: 1;
+    }
+}
+
